@@ -2,10 +2,11 @@ import mysql.connector
 import os
 import time
 from flask import Flask, redirect, render_template
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
+load_dotenv()
 
 # Render the homepage with buttons
 @app.route('/')
@@ -28,6 +29,4 @@ def redirect_9000():
     return redirect(f'app_doc')
 
 if __name__ == '__main__':
-    # If running with Gunicorn, you can start the app using Gunicorn like this:
-    # gunicorn main:app -b 0.0.0.0:8080
     app.run(port=8080)

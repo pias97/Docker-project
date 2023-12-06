@@ -11,7 +11,7 @@ services:
         container_name: app_main
         restart: always
         ports:
-            - "${MAIN_PORT}:8080"
+            - "${APP_PORT}:8080"
         command: ["python3", "main.py"]
         volumes:
             - $PWD/main.py:/app/main.py
