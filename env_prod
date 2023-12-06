@@ -1,0 +1,5 @@
+DB_HOST=py-mysql
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=1234
+DB_NAME=collection
