@@ -6,3 +6,7 @@ DB_NAME=collection
 
 
 APP_PORT=8080
+
+app_post_port=7000
+app_music_port=8000
+app_doc_port=9000
