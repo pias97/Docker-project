@@ -20,7 +20,7 @@ services:
             - server-bridge
 
     app_post:
-        image: "app1:v1"
+        image: "pias97/app_post:latest"
         env_file:
             - $PWD/.env
         container_name: app_post
@@ -35,7 +35,7 @@ services:
 
 
     app_music:
-        image: "app2:v1"
+        image: "pias97/app_music:latest"
         env_file:
             - $PWD/.env
         container_name: app_music
@@ -50,7 +50,7 @@ services:
 
 
     app_doc:
-        image: "app3:v1"
+        image: "pias97/app_doc:latest"
         env_file:
             - $PWD/.env
         container_name: app_doc
