@@ -17,7 +17,7 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY --from=builder /usr/local/lib/python3.9/dist-packages /usr/local/lib/python3.9/dist-packages
+COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
 COPY --from=builder /app .
 
 EXPOSE 8080
